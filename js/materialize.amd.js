@@ -13,7 +13,7 @@ require.config({
   		deps: ['jquery']
   	},
   	'jquery.hammer': {
-  		deps: ['jquery', 'hammerjs']
+  		deps: ['jquery', 'hammerjs', 'waves']
   	},
   	'collapsible': {
   		deps: ['jquery']

@@ -1,6 +1,10 @@
 (function(factory) {
     if (typeof define === 'function' && define.amd) {
-        define(['jquery', 'hammerjs'], factory);
+        define(['jquery', 'hammerjs', 'waves'], function($, Hammer, Waves) {
+          factory($, Hammer);
+          // display the effect that isn't displayed by default
+          Waves.displayEffect();
+        });
     } else if (typeof exports === 'object') {
         factory(require('jquery'), require('hammerjs'));
     } else {
