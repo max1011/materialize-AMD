@@ -30,7 +30,7 @@ require.config({
       deps: ['jquery']
     },
     'leanModal': {
-      deps: ['jquery']
+      deps: ['jquery', 'velocity']
     },
     'materialbox': {
       deps: ['jquery']
@@ -76,14 +76,17 @@ require.config({
     },
     'character_counter': {
       deps: ['jquery']
+    },
+    'velocity': {
+      deps: ['jquery']
     }
   }
 });
 
 require([
+  'velocity',
   'jquery.easing',
   'animation',
-  'velocity',
   'hammerjs',
   'jquery.hammer',
   'global', // very important do not remove! 
@@ -110,7 +113,7 @@ require([
   'character_counter'
 ]);
 
-// all the deps than can be used:
+// all the deps that can be used:
 
 /*
 'jquery.easing',

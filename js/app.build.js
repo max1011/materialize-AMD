@@ -32,7 +32,7 @@
       deps: ['jquery']
     },
     'leanModal': {
-      deps: ['jquery']
+      deps: ['jquery', 'velocity']
     },
     'materialbox': {
       deps: ['jquery']
@@ -77,6 +77,9 @@
       exports: 'Waves'
     },
     'character_counter': {
+      deps: ['jquery']
+    },
+    'velocity': {
       deps: ['jquery']
     }
   },
